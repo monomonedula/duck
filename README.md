@@ -10,10 +10,11 @@ noise = Duck(creature).attr_call(
     DuckCall("roar"), # creature.roar()
     DuckCall("speak", ["Hello "], {"times": 3}) # creature.speak("Hello ", times=3)
 ) # returns the output of the first successfull call
+# if none of the call attempts was successful then the last raised error will be thrown
 
 print(noise)
 ```
-DuckCall class is fully replacable here with any custom callable accepting single argument. This argument is the Duck-wrapped object, so you can implement custom attribute extracting and/or calling behavior here. AttributeErrors and TypeErrors thrown from this callable is handled by the Duck object.
+**DuckCall** class is fully replacable here with any custom callable accepting single argument. This argument is the **Duck**-wrapped object, so you can implement custom attribute extracting and/or calling behavior here. **AttributeError**s and **TypeError**s thrown from this callable is handled by the **Duck** instance.
 
 
 Simplified interface for property extraction:
@@ -23,7 +24,7 @@ name = Duck(some_person).attr('first_name', 'name', 'full_name')
 # otherwise AttributeError is thrown
 ```
 
-You may also use Duck as wrapper to a callable:
+You may also use **Duck** as wrapper to a callable:
 ```python
 duck = Duck(some_callable)
 duck(
