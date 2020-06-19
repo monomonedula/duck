@@ -1,4 +1,4 @@
-# duck
+# duckt
 A small Python package facilitating duck typing through attribute traverse utilities
 
 This replaces try/except chains when trying to call different methods:
@@ -52,4 +52,9 @@ duck.call(
 )
 
 ```
+# Installation
+```shell script
+pip install duckt
+```
+
 That's it.
