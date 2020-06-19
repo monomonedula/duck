@@ -3,7 +3,7 @@ A small Python package facilitating duck typing through attribute traverse utili
 
 This replaces try/except chains when trying to call different methods:
 ```python
-from duck import Duck, DuckCall
+from duckt import Duck, DuckCall
 
 class Lion:
     def roar(self):
@@ -26,7 +26,7 @@ assert Duck(creature).attr_call(
 
 Simplified interface for property extraction:
 ```python
-from duck import Duck
+from duckt import Duck
 
 class Person:
     full_name = "John Doe"
@@ -39,7 +39,7 @@ name = Duck(some_person).attr('first_name', 'name', 'full_name')
 
 You may also use **Duck** as wrapper to a callable:
 ```python
-from duck import Duck
+from duckt import Duck
 
 def foo(some_string):
     print(some_string)

@@ -7,4 +7,6 @@ install:
   - pip install poetry
   - poetry install
 script:
-  - pytest --cov duck --cov-report xml
+  - pytest --cov duckt --cov-report xml
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

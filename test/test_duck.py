@@ -1,6 +1,6 @@
 import pytest
 
-from duck import Duck, DuckGet, DuckCall
+from duckt import Duck, DuckGet, DuckCall
 
 
 class Obj:

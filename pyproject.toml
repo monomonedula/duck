@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "duck"
+name = "duckt"
 version = "0.1.0"
 description = "Python package facilitating duck typing through attribute traverse utilities"
 authors = ["Vladyslav Halchenko <valh@tuta.io>"]
