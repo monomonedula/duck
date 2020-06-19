@@ -1,4 +1,10 @@
 # duckt
+
+[![Travis CI build status](https://travis-ci.org/monomonedula/duck.svg?branch=master)](https://travis-ci.org/monomonedula/duck.svg?branch=master)
+[![codecov](https://codecov.io/gh/monomonedula/duck/branch/master/graph/badge.svg)](https://codecov.io/gh/monomonedula/duck)
+[![PyPI version](https://badge.fury.io/py/duckt.svg)](https://badge.fury.io/py/duckt)
+
+
 A small Python package facilitating duck typing through attribute traverse utilities
 
 This replaces try/except chains when trying to call different methods:
